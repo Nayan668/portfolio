@@ -16,6 +16,9 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
+.color{
+    color: #f29400;
+}
 
 /* Background gradient effect */
 body::before {
@@ -44,6 +47,16 @@ body::before {
 .hero-section { min-height: 90vh; display: flex; align-items: center; padding: 60px 0; }
 .stats h3 { color: var(--accent); font-weight: 700; margin-bottom: 0; }
 .stats p { font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+
+/* Typing Cursor */
+.cursor {
+    font-weight: bold;
+    color: #f29400;
+    animation: blink 0.7s infinite;
+}
+
+
 
 /* Image Blob */
 .hero-blob {
@@ -160,4 +173,8 @@ body::before {
     .hero-blob { width: 350px; height: 380px; margin: 40px auto 0; }
     .hero-section { text-align: center; }
     .stats { justify-content: center; }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
